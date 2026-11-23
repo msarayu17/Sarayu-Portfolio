@@ -1,16 +1,80 @@
-# React + Vite
+# Macherla Sarayu — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my background, technical skills, projects and journey as a Computer Science and Engineering student.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** [Sarayu's Portfolio](https://sarayu-portfolio.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Hello! I'm Sarayu Macherla, a Computer Science and Engineering student passionate about software development, technology and creating meaningful digital experiences.
 
-## Expanding the ESLint configuration
+This portfolio serves as a space to showcase my technical skills, projects, academic background and interests.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Built With
+
+- React.js
+- JavaScript
+- CSS3
+- Framer Motion
+- Lucide React
+- Vite
+
+## Features
+
+- Modern and responsive user interface
+- Dark and luxurious visual theme
+- Animated sections and interactive elements
+- Dedicated skills and education sections
+- Project showcase with GitHub and live demo links
+- Contact section with social profile links
+- Mobile-friendly navigation
+
+## Featured Projects
+
+| Project | Description | Live Demo |
+|---|---|---|
+| Vowera | Responsive frontend web application | [View Website](https://vowera.vercel.app/) |
+| NutriGuide | Nutrition guidance platform | [View Website](https://nutri-guide-rho.vercel.app/) |
+| AlgoBudget | Student expense and budget tracker | [View Website](https://algo-budget.vercel.app/) |
+| Task Manager | Daily task management application | [View Website](https://task-manager-rosy-omega-32.vercel.app/) |
+
+## Run Locally
+
+To run this project on your local machine:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/msarayu17/Sarayu-Portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Sarayu-Portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Connect With Me
+
+- **GitHub:** [msarayu17](https://github.com/msarayu17)
+- **LinkedIn:** [Sarayu Macherla](https://www.linkedin.com/in/sarayu-macherla-473774382/)
+
+---
+
+Made with ❤️ by Sarayu Macherla.
