@@ -1,0 +1,24 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 85px;
+}
+
+@media (max-width: 900px) {
+  section {
+    scroll-margin-top: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    scroll-margin-top: 65px;
+  }
+}

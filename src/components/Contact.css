@@ -1,0 +1,117 @@
+.contact {
+    padding: 120px 10% 50px;
+    background: #000000;
+}
+
+.contact-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.contact-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin-bottom: 70px;
+}
+
+.contact-label span {
+    width: 35px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.contact-content {
+    max-width: 850px;
+}
+
+.contact-small-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.6;
+    margin-bottom: 25px;
+}
+
+.contact-content h2 {
+    font-family: var(--heading-font);
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1.05;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contact-content h2 span {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.contact-description {
+    max-width: 480px;
+    font-size: 13px;
+    line-height: 2;
+    opacity: 0.65;
+    margin-bottom: 35px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 25px;
+    background: var(--champagne);
+    color: var(--primary);
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-4px);
+}
+
+.contact-socials {
+    display: flex;
+    gap: 30px;
+    margin-top: 90px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(238, 227, 176, 0.15);
+}
+
+.contact-socials a {
+    font-size: 11px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.contact-socials a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 90px 7% 35px;
+    }
+
+    .contact-socials {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .contact-bottom {
+        font-size: 8px;
+    }
+}
