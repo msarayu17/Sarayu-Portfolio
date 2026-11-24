@@ -7,9 +7,23 @@ const education = [
     {
         period: '2025 — 2029',
         degree: 'B.Tech — Computer Science & Engineering',
-        institution: 'Malla Reddy University',
+        institution: 'Malla Reddy University - Hyderabad',
         details: 'Currently pursuing undergraduate studies in Computer Science and Engineering.',
         status: 'IN PROGRESS'
+    },
+    {
+        period: '2023 — 2025',
+        degree: 'Intermediate — MPC',
+        institution: 'Career Point Junior College - Tarnaka',
+        details: 'Completed intermediate education with a focus on Mathematics, Physics, and Chemistry.',
+        status: 'COMPLETED'
+    },
+    {
+        period: '2023',
+        degree: 'SSC — Secondary School Certificate',
+        institution: 'Narayana High School - Tarnaka',
+        details: 'Successfully completed secondary education with a strong academic record.',
+        status: 'COMPLETED'
     }
 ];
 

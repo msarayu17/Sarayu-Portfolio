@@ -27,7 +27,7 @@ const skillCategories = [
         number: '03',
         title: 'Backend Development',
         icon: <Server size={24} />,
-        skills: ['Spring Boot', 'REST APIs']
+        skills: ['Spring Boot', 'Java']
     },
     {
         number: '04',
@@ -39,7 +39,7 @@ const skillCategories = [
         number: '05',
         title: 'Core Computer Science',
         icon: <Brain size={24} />,
-        skills: ['Data Structures', 'OOP', 'DBMS']
+        skills: ['Data Structure Fundamentals', 'OOPs', 'DBMS']
     }
 ];
 

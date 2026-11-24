@@ -50,7 +50,7 @@ function About() {
                     >
 
                         <p className="about-intro">
-                            Hello! I'm <span>Sarayu Macherla</span>,
+                            Hello! I'm <span>Sarayu</span>,
                             a Computer Science and Engineering student
                             passionate about technology, creativity and innovation.
                         </p>
