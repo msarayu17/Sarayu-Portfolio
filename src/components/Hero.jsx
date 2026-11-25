@@ -67,12 +67,22 @@ function Hero() {
                     >
                         LinkedIn ↗
                     </a>
+
                     <a
                         href="https://www.credly.com/users/sarayu-macherla"
                         target="_blank"
                         rel="noreferrer"
                     >
                         Credly ↗
+                    </a>
+
+                    <a
+                        href="https://www.codechef.com/users/u2511cs010044"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        CodeChef ↗
+
                     </a>
                 </div>
 
