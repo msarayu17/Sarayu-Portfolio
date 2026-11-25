@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
@@ -41,19 +41,38 @@ function Hero() {
                         Get In Touch
                     </a>
 
+                    <a
+                        href="/Sarayu_Macherla_Resume.pdf"
+                        download="Macherla_Sarayu_Resume.pdf"
+                        className="resume-btn"
+                    >
+                        Download Resume <Download size={16} />
+                    </a>
+
                 </div>
 
                 <div className="hero-socials">
-                    <a href="https://github.com/msarayu17"
+                    <a
+                        href="https://github.com/msarayu17"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                    >
                         GitHub ↗
                     </a>
 
-                    <a href="https://www.linkedin.com/in/sarayu-macherla-473774382"
+                    <a
+                        href="https://www.linkedin.com/in/sarayu-macherla-473774382"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                    >
                         LinkedIn ↗
+                    </a>
+                    <a
+                        href="https://www.credly.com/users/sarayu-macherla"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Credly ↗
                     </a>
                 </div>
 

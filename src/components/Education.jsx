@@ -82,7 +82,7 @@ function Education() {
                 </div>
 
                 <div className="education-bottom">
-                    <span>05 — EDUCATION</span>
+                    <span>06 — EDUCATION</span>
                     <span>KNOWLEDGE IS A JOURNEY.</span>
                 </div>
 

@@ -1,9 +1,26 @@
-import React from 'react';
-import { ArrowUpRight, Mail } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowUpRight, Mail, Copy, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Contact.css';
 
 function Contact() {
+    const [copied, setCopied] = useState(false);
+
+    const email = 'macherlasarayu.04@gmail.com';
+
+    const copyEmail = async () => {
+        try {
+            await navigator.clipboard.writeText(email);
+            setCopied(true);
+
+            setTimeout(() => {
+                setCopied(false);
+            }, 2000);
+        } catch (error) {
+            console.error('Unable to copy email', error);
+        }
+    };
+
     return (
         <section className="contact" id="contact">
             <div className="contact-container">
@@ -35,14 +52,26 @@ function Contact() {
                         exciting projects. Feel free to reach out!
                     </p>
 
-                    <a
-                        href="mailto:macherlasarayu.04@gmail.com"
-                        className="contact-button"
-                    >
-                        <Mail size={18} />
-                        Say Hello
-                        <ArrowUpRight size={18} />
-                    </a>
+                    <div className="contact-actions">
+
+                        <a
+                            href={`mailto:${email}`}
+                            className="contact-button"
+                        >
+                            <Mail size={18} />
+                            Say Hello
+                            <ArrowUpRight size={18} />
+                        </a>
+
+                        <button
+                            className="copy-email-button"
+                            onClick={copyEmail}
+                        >
+                            {copied ? <Check size={17} /> : <Copy size={17} />}
+                            {copied ? 'Copied!' : 'Copy Email'}
+                        </button>
+
+                    </div>
                 </motion.div>
 
                 <div className="contact-socials">
@@ -62,7 +91,7 @@ function Contact() {
                 </div>
 
                 <div className="contact-bottom">
-                    <span>06 — CONTACT</span>
+                    <span>08 — CONTACT</span>
                     <span>OPEN TO OPPORTUNITIES.</span>
                 </div>
 

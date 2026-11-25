@@ -10,7 +10,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <a href="#home" className="nav-logo" onClick={closeMenu}>
-                SM<span>.</span>
+                MS<span>.</span>
             </a>
 
             <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
@@ -18,7 +18,9 @@ function Navbar() {
                 <a href="#about" onClick={closeMenu}>About</a>
                 <a href="#skills" onClick={closeMenu}>Skills</a>
                 <a href="#projects" onClick={closeMenu}>Projects</a>
+                <a href="#certifications" onClick={closeMenu}>Certifications</a>
                 <a href="#education" onClick={closeMenu}>Education</a>
+                <a href="#extracurriculars" onClick={closeMenu}>Extracurriculars</a>
             </div>
 
             <a href="#contact" className="nav-contact" onClick={closeMenu}>

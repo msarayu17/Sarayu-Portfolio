@@ -183,28 +183,48 @@
     flex-wrap: wrap;
 }
 
-.project-links a {
+.project-links a,
+.project-links button {
     display: inline-flex;
     align-items: center;
     gap: 9px;
+    font-family: inherit;
     font-size: 11px;
+    color: var(--champagne);
     transition: 0.3s;
+    text-decoration: none;
 }
 
-.project-github:hover {
-    color: var(--accent);
-}
+/* Case Study */
 
-.project-live {
+/* ==============================
+   CASE STUDY BUTTON
+============================== */
+
+.project-case-study {
     position: relative;
     display: inline-flex;
     align-items: center;
+    gap: 9px;
     height: 36px;
-    padding-bottom: 0;
-    border-bottom: none;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    color: var(--champagne);
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
-.project-live::after {
+.project-case-study:hover {
+    color: var(--accent);
+}
+
+.project-case-study::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -214,8 +234,296 @@
     background: var(--accent);
 }
 
-.project-live:hover {
+
+/* ==============================
+   CASE STUDY OVERLAY
+============================== */
+
+.case-study-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+
+/* ==============================
+   CASE STUDY MODAL
+============================== */
+
+.case-study-modal {
+    position: relative;
+
+    width: 100%;
+    max-width: 850px;
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: var(--primary);
+    border: 1px solid rgba(238, 227, 176, 0.2);
+
+    padding: 55px;
+}
+
+
+/* Scrollbar */
+
+.case-study-modal::-webkit-scrollbar {
+    width: 4px;
+}
+
+.case-study-modal::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+
+/* ==============================
+   CLOSE BUTTON
+============================== */
+
+.case-study-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background: transparent;
+    border: 1px solid rgba(238, 227, 176, 0.25);
+
+    color: var(--champagne);
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.case-study-close:hover {
+    background: var(--champagne);
+    color: var(--primary);
+    transform: rotate(90deg);
+}
+
+
+/* ==============================
+   MODAL HEADER
+============================== */
+
+.case-study-header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(238, 227, 176, 0.15);
+}
+
+.case-study-number {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 3px;
     color: var(--accent);
+    margin-bottom: 18px;
+}
+
+.case-study-category {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    margin-bottom: 12px;
+}
+
+.case-study-header h2 {
+    font-family: var(--heading-font);
+    font-size: clamp(45px, 6vw, 70px);
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.case-study-header h2 span {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.case-study-header p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    opacity: 0.6;
+}
+
+
+/* ==============================
+   CONTENT
+============================== */
+
+.case-study-content {
+    padding: 35px 0;
+}
+
+.case-study-section {
+    margin-bottom: 30px;
+}
+
+.case-study-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--accent);
+
+    margin-bottom: 15px;
+}
+
+.case-study-label::before {
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.case-study-section p {
+    font-size: 12px;
+    line-height: 2;
+    opacity: 0.65;
+}
+
+
+/* ==============================
+   FEATURES
+============================== */
+
+.case-study-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.case-study-section ul li {
+    position: relative;
+    padding: 8px 0 8px 20px;
+
+    font-size: 12px;
+    line-height: 1.8;
+    opacity: 0.7;
+}
+
+.case-study-section ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 10px;
+}
+
+
+/* ==============================
+   TECH STACK
+============================== */
+
+.case-study-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.case-study-tech span {
+    padding: 9px 14px;
+
+    border: 1px solid rgba(238, 227, 176, 0.2);
+
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--champagne);
+
+    transition: 0.3s ease;
+}
+
+.case-study-tech span:hover {
+    border-color: var(--accent);
+    background: rgba(80, 0, 113, 0.2);
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+.case-study-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    padding-top: 25px;
+    border-top: 1px solid rgba(238, 227, 176, 0.15);
+}
+
+.case-study-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 11px;
+    color: var(--champagne);
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.case-study-footer a:hover {
+    color: var(--accent);
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 600px) {
+
+    .case-study-overlay {
+        padding: 15px;
+    }
+
+    .case-study-modal {
+        padding: 35px 25px;
+        max-height: 90vh;
+    }
+
+    .case-study-close {
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .case-study-header h2 {
+        font-size: 45px;
+    }
+
+    .case-study-content {
+        padding: 25px 0;
+    }
+
+    .case-study-section {
+        margin-bottom: 25px;
+    }
+
+    .case-study-footer {
+        gap: 20px;
+    }
 }
 
 
@@ -269,4 +577,34 @@
         font-size: 8px;
     }
 
+}
+
+.case-study-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 99999 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.case-study-modal {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
+
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    max-height: 85vh;
+    overflow-y: auto;
+
+    background: var(--primary);
+    border: 1px solid rgba(238, 227, 176, 0.2);
+    padding: 60px;
 }

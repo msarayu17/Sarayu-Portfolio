@@ -40,6 +40,13 @@ const skillCategories = [
         title: 'Core Computer Science',
         icon: <Brain size={24} />,
         skills: ['Data Structure Fundamentals', 'OOPs', 'DBMS']
+    },
+
+    {
+        number: '06',
+        title: "Tools & DevOps",
+        icon: <Monitor size={24} />,
+        skills: ["Git", "GitHub", "VS Code", "Vercel"]
     }
 ];
 

@@ -75,6 +75,34 @@ function About() {
 
                 </div>
 
+                {/* Languages & Beyond Code */}
+                <div className="about-extras">
+
+                    <div className="about-extra-group">
+                        <span className="about-extra-label">LANGUAGES</span>
+
+                        <div className="about-tags">
+                            <span>English <i>[Conversational]</i></span>
+                            <span>Telugu <i>[Native]</i></span>
+                            <span>Hindi <i>[Basic]</i></span>
+                            <span>Korean <i>[Basic]</i></span>
+                        </div>
+                    </div>
+ 
+                    <div></div>
+
+                    <div className="about-extra-group">
+                        <span className="about-extra-label">BEYOND CODE</span>
+
+                        <div className="about-tags">
+                            <span>Cooking / Baking</span>
+                            <span>Content Creation</span>
+                            <span>Piano</span>
+                            <span>Exploring New Technologies</span>
+                        </div>
+                    </div>
+
+                </div>
 
                 {/* Interest Cards */}
                 <div className="about-cards">

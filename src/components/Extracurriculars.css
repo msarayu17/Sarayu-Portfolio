@@ -1,0 +1,243 @@
+.extracurriculars {
+    padding: 120px 10%;
+    background: var(--primary);
+}
+
+.extracurriculars-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* LABEL */
+
+.extracurriculars-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin-bottom: 35px;
+}
+
+.extracurriculars-label span {
+    width: 35px;
+    height: 1px;
+    background: var(--accent);
+}
+
+/* HEADING */
+
+.extracurriculars-heading {
+    max-width: 750px;
+    margin-bottom: 70px;
+}
+
+.extracurriculars-heading h2 {
+    font-family: var(--heading-font);
+    font-size: clamp(55px, 7vw, 90px);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.extracurriculars-heading h2 span {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.extracurriculars-heading p {
+    font-size: 13px;
+    line-height: 2;
+    max-width: 520px;
+    opacity: 0.65;
+}
+
+/* CARD */
+
+.extracurriculars-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.extracurricular-card {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+
+    background: linear-gradient(120deg,
+            rgba(80, 0, 113, 0.25),
+            rgba(0, 0, 0, 0.3));
+
+    border: 1px solid rgba(238, 227, 176, 0.15);
+    transition: 0.4s ease;
+}
+
+.extracurricular-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+/* ICON */
+
+.extracurricular-icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(238, 227, 176, 0.3);
+    color: var(--champagne);
+}
+
+/* CONTENT */
+
+.extracurricular-content {
+    flex: 1;
+}
+
+.extracurricular-period {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--accent);
+}
+
+.extracurricular-number {
+    float: right;
+    font-size: 10px;
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+.extracurricular-content h3 {
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: 500;
+    margin: 22px 0 8px;
+}
+
+.extracurricular-content h4 {
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 18px;
+}
+
+.extracurricular-description {
+    font-size: 12px;
+    line-height: 2;
+    opacity: 0.6;
+    max-width: 750px;
+}
+
+/* RESPONSIBILITIES */
+
+.extracurricular-responsibilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.extracurricular-responsibilities span {
+    padding: 10px 14px;
+
+    border: 1px solid rgba(238, 227, 176, 0.15);
+
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgba(238, 227, 176, 0.75);
+
+    transition: 0.3s ease;
+}
+
+.extracurricular-responsibilities span:hover {
+    border-color: var(--accent);
+    color: var(--champagne);
+    background: rgba(80, 0, 113, 0.2);
+}
+
+/* BOTTOM */
+
+.extracurriculars-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(238, 227, 176, 0.15);
+
+    font-size: 9px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .extracurriculars {
+        padding: 90px 7%;
+    }
+
+    .extracurricular-card {
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .extracurricular-icon {
+        min-width: 42px;
+        height: 42px;
+    }
+
+    .extracurricular-content h3 {
+        font-size: 25px;
+    }
+
+    .extracurricular-number {
+        float: none;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .extracurricular-responsibilities span {
+        font-size: 9px;
+        padding: 9px 11px;
+    }
+
+    .extracurriculars-bottom {
+        font-size: 8px;
+        gap: 15px;
+    }
+
+}
+
+.extracurricular-certificate {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+    font-size: 11px;
+    color: var(--champagne);
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+.extracurricular-certificate::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--accent);
+    transition: 0.3s;
+}
+
+.extracurricular-certificate:hover {
+    color: var(--accent);
+}
